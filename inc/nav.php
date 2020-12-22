@@ -14,5 +14,4 @@ $navigation = [
             'prisijungti' => 'Prisijungti',
         ]
     ]
-]
-?>
+];

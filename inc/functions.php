@@ -20,7 +20,7 @@ function allFilms()
     try {
         if ($conn) {
             $stmt = $conn->query("SELECT filmai.pavadinimas, filmai.id, filmai.aprasymas, 
-                              filmai.trukme, filmai.rezisierius, kategorijos.pavadinimas AS kategorijosPavadinimas
+                              filmai.trukme,  filmai.rezisierius, kategorijos.pavadinimas AS kategorijosPavadinimas
                               FROM filmai 
                               INNER JOIN kategorijos ON filmai.kategorijos_id=kategorijos.id");
             $filmai = $stmt->fetchAll();

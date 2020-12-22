@@ -30,7 +30,7 @@
         <?php include "_partials/nav.view.php";?>
         <div class="container-fluid">
                 <?php
-                     require $_SERVER["DOCUMENT_ROOT"].'/router.php';
+                     require ($_SERVER["DOCUMENT_ROOT"].'/dvyliktokai/router.php');
                 ?>
             </div>
         </div>

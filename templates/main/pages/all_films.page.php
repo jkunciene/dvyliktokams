@@ -3,7 +3,7 @@
 connect();
 $filmai = allFilms();
 ?>
- 
+
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -16,16 +16,18 @@ $filmai = allFilms();
     </thead>
     <tr>
         <?php
-        foreach ($filmai as $filmas): ?>
- 
+        foreach ($filmai
+
+        as $filmas): ?>
+
     <tr>
- 
-    <td><?=$filmas['pavadinimas']; ?></td>
-    <td><?=$filmas['aprasymas']; ?></td>
-    <td><?=$filmas['rezisierius']; ?></td>
-    <td><?=$filmas['trukme']; ?></td>
-        <td><?=$filmas['kategorijosPavadinimas']; ?></td>
- 
+
+        <td><?= $filmas['pavadinimas']; ?></td>
+        <td><?= $filmas['aprasymas']; ?></td>
+        <td><?= $filmas['rezisierius']; ?></td>
+        <td><?= $filmas['trukme']; ?></td>
+        <td><?= $filmas['kategorijosPavadinimas']; ?></td>
+
     </tr>
     <?php endforeach; ?>
     </tr>
